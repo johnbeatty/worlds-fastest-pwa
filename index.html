@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>The World's Fastest PWA</title>
+    <link rel="manifest" href="/manifest.json">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#C50001"/>
+    <meta name="Description" content="The World's Fastest PWA">
+  </head>
+  <body>
+    <h1>The World's Fastest PWA</h1>
+    <p>This is the one!</p>
+    <script type="text/javascript">
+    if (navigator.serviceWorker) {
+      navigator.serviceWorker.register('/service-worker.js', { scope: './' })
+      .then(function(reg) {
+        console.log('[Companion]', 'Service worker registered!');
+        console.log(reg);
+      });
+    }
+    </script>
+  </body>
+</html>
