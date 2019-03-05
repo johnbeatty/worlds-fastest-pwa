@@ -12,7 +12,7 @@
     <p>This is the one!</p>
     <script type="text/javascript">
     if (navigator.serviceWorker) {
-      navigator.serviceWorker.register('/worlds-fastest-pwa/service-worker.js', { scope: './worlds-fastest-pwa/' })
+      navigator.serviceWorker.register('/worlds-fastest-pwa/service-worker.js', { scope: '/worlds-fastest-pwa/' })
       .then(function(reg) {
         console.log('[Companion]', 'Service worker registered!');
         console.log(reg);
