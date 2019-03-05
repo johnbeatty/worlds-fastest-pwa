@@ -6,7 +6,7 @@ function onInstall(event) {
   event.waitUntil(
     caches.open(CACHE_NAME).then(function prefill(cache) {
       return cache.addAll([
-        '/offline.html',
+        '/worlds-fastest-pwa/offline.html',
       ]);
     })
   );
@@ -44,7 +44,7 @@ function onFetch(event) {
         if (event.request.mode === 'navigate' ||
           (event.request.method === 'GET' && event.request.headers.get('accept').includes('text/html'))) {
           console.log('[Serviceworker]', "Fetching offline content", event);
-          return caches.match('/offline.html');
+          return caches.match('/worlds-fastest-pwa/offline.html');
         }
       })
     })
