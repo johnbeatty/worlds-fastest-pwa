@@ -3,12 +3,12 @@
   "name": "The Worlds Fastest PWA",
   "icons": [
     {
-      "src": "/worlds-fastest-pwa/icons-192.png",
+      "src": "/worlds-fastest-pwa/icon_192.png",
       "type": "image/png",
       "sizes": "192x192"
     },
     {
-      "src": "/worlds-fastest-pwa/icons-512.png",
+      "src": "/worlds-fastest-pwa/icon_512.png",
       "type": "image/png",
       "sizes": "512x512"
     }
